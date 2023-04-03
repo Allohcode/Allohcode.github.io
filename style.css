@@ -115,6 +115,15 @@ banner
   align-items: center;
   height: 100vh;
   box-shadow: var(--box-shadow);
+  position: fixed;
+}
+.profile-info {
+  position: fixed;
+  left: 100%;
+  transition: var(--transition);
+}
+.show-banner {
+  left: 5%;
 }
 .banner h3 {
   font-size: 0.8rem;
