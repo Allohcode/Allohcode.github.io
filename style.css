@@ -77,7 +77,7 @@ a {
   text-align: center;
 }
 i {
-  color: var(--white-color);
+  color: var(--gray-lightr);
 }
 
 .btn {
@@ -177,7 +177,7 @@ banner
   text-align: center;
   margin: 0 auto;
   z-index: 1120;
-  background-color: rgba(0, 0, 0, 0.548);
+  background-color: rgba(209, 205, 205, 0.219);
 }
 
 .nav i {
