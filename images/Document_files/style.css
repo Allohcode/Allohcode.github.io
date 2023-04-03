@@ -51,7 +51,7 @@ global style
   --black-gray2: rgba(2, 2, 15, 0.973);
   --black-gray3: rgb(43, 42, 42);
   --gray-color: rgb(118, 117, 117);
-  --gray-lightr: rgb(146, 145, 145);
+  --gray-lightr: rgb(204, 203, 203);
   --gray-lightr2: rgb(238, 236, 236);
   --white-color: #fff;
   --white-color2: rgb(240, 237, 237);
@@ -68,7 +68,7 @@ global style
   padding: 2rem 1rem;
   border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
-  background-color: var(--black-gray);
+  background-color: ;
 }
 a {
   color: var(--white-color);
@@ -76,7 +76,7 @@ a {
   text-align: center;
 }
 i {
-  color: var(--white-color);
+  color: var(--b-color);
 }
 
 .btn {
@@ -94,9 +94,7 @@ i {
 }
 .section-box {
   box-shadow: var(--box-shadow);
-  padding: 20px;
-  background: var(--white-color);
-  border-radius: 5px;
+  padding: 10px 0;
 }
 
 /* 
@@ -176,11 +174,11 @@ banner
   text-align: center;
   margin: 0 auto;
   z-index: 1120;
-  background-color: rgba(0, 0, 0, 0.548);
+  background-color: var(--black-gray2);
 }
 
 .nav i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -193,7 +191,6 @@ about
 .section-title h1 {
   text-align: center;
   font-size: 2rem;
-  color: white;
 }
 
 /* 
@@ -216,11 +213,11 @@ skill
   /* padding: 10px; */
   width: 80%;
   padding: 15px;
+
   box-shadow: var(--box-shadow-2);
   margin: 0 auto;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: var(--white-color);
 }
 .skill-img img {
   margin: 0 auto;
@@ -242,32 +239,13 @@ projects
 
 .projects-img {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 10px;
   box-shadow: var(--box-shadow);
   font-size: 0.9rem;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.projects-img p {
-  line-height: 1;
-  margin-bottom: 1.4rem;
 }
 
 .projects img {
   /* width: 200px; */
   margin: 0 auto;
   margin-top: -1rem;
-}
-
-@media screen and (min-width: 700px) {
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    justify-content: space-between;
-    align-items: center;
-    place-items: center;
-    gap: 0 3rem;
-    /* width: 100%; */
-  }
 }
