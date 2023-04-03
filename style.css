@@ -61,7 +61,8 @@ global style
     inset 0.1rem -0.1rem 13px rgba(0, 0, 0, 0.1), inset 6px 6px 13px #fff,
     inset -6px -6px 13px rgba(0, 0, 0, 0.1);
   --transition: all ease 0.5s;
-  --b-color: rgba(19, 231, 214, 0.863);
+  --b-color: rgba(27, 122, 114, 0.863);
+  --b-color-2: rgba(19, 231, 214, 0.863);
 }
 
 .section {
