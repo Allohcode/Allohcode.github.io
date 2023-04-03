@@ -4,6 +4,6 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     banner.classList.add("show-banner");
     // banner.style.transition = "0.4s";
-  }, 500);
+  }, 1000);
 });
 console.log("melas");
