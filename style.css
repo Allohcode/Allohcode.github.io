@@ -164,15 +164,16 @@ banner
   height: 100vh;
 } */
 
-.banner {
-  display: flex;
-  /* flex-direction: column; */
+.banner-text {
+  /* display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   place-items: center;
-  place-content: center;
-  height: 100%;
+  place-content: center; */
+  /* height: 100%; */
   margin: 0 auto;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -196,7 +197,7 @@ span {
 }
 
 .pro {
-  width: 150px;
+  width: 100px;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: -2rem;
