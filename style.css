@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -8,9 +8,10 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   scroll-behavior: smooth;
   color: var(--white-color);
+  background: var(--black-gray);
 
   font-weight: 300;
 }
@@ -47,37 +48,36 @@ global style
 */
 
 :root {
-  --black-gray: rgb(10, 10, 10);
+  --black-gray: rgb(19, 18, 18);
   --black-gray2: rgba(2, 2, 15, 0.973);
   --black-gray3: rgb(43, 42, 42);
   --gray-color: rgb(118, 117, 117);
-  --gray-lightr: rgb(146, 145, 145);
+  --gray-lightr: rgb(204, 203, 203);
   --gray-lightr2: rgb(238, 236, 236);
   --white-color: #fff;
   --white-color2: rgb(240, 237, 237);
   --white-color3: rgb(239, 220, 220);
-  --box-shadow: 0 0.5rem 1.5rem rgba(255, 245, 245, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --box-shadow-2: inset -0.1rem -0.1rem 13px #fff,
     inset 0.1rem -0.1rem 13px rgba(0, 0, 0, 0.1), inset 6px 6px 13px #fff,
     inset -6px -6px 13px rgba(0, 0, 0, 0.1);
   --transition: all ease 0.5s;
-  --b-color: rgba(19, 231, 214, 0.863);
-  --b-color-2: rgba(51, 110, 105, 0.863);
+  --b-color: rgba(183, 238, 233, 0.863);
 }
 
 .section {
   padding: 2rem 1rem;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
   transition: transform 1s, opacity 1s;
-  background-color: var(--black-gray);
+}
+.height {
+  height: 100%;
 }
 a {
   color: var(--white-color);
   text-decoration: none;
   text-align: center;
-}
-i {
-  color: var(--gray-lightr);
+  font-size: 0.8rem;
 }
 
 .btn {
@@ -86,102 +86,132 @@ i {
   padding: 10px 20px;
   display: flex;
   justify-content: center;
-  /* margin: 0 auto; */
+  border-radius: 3px;
+  /* background-color: red; */
+  transition: var(--transition);
+}
+.btn:hover {
+  color: var(--black-gray);
+  background: var(--white-color);
+  border: 1px solid var(--b-color);
+}
+
+.btn-center {
+  margin: 0 auto;
 }
 .section-center {
-  width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
   max-width: 1120px;
 }
 .section-box {
   box-shadow: var(--box-shadow);
-  padding: 20px;
-  background: var(--white-color);
-  border-radius: 5px;
+  padding: 10px 0;
 }
 
+/* 
+======================
+header
+======================
+*/
+header {
+  padding: 1rem 2rem;
+}
+nav {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  nav ul {
+    display: flex;
+    flex-direction: flex;
+    gap: 0 2rem;
+  }
+  nav ul li {
+    list-style: none;
+  }
+}
 /* 
 ======================
 banner
 ======================
 */
-.profile {
-  width: 80%;
-  margin: 0 auto;
-}
+
 .Banner-sec {
-  background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.842)),
-    url("./images/administrator-developer-icon.svg") center/cover;
   height: 100vh;
 }
+
 .banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  box-shadow: var(--box-shadow);
-  position: fixed;
+  height: 100%;
+  text-align: center;
 }
-.profile-info {
-  position: fixed;
-  left: 100%;
-  transition: var(--transition);
-}
-.show-banner {
-  left: 5%;
-}
+
 .banner h3 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.banner h1 {
+  font-size: 3.4rem;
+}
+.banner h4 {
+  font-size: 2rem;
   color: var(--b-color);
 }
-.banner h1 {
-  font-size: 2.3rem;
-}
-.banner h2 {
-  color: var(--gray-lightr-2);
+.banner p {
+  font-size: 1rem;
 }
 
-@media screen and (min-width: 700px) {
-  .banner h1 {
-    font-size: 4rem;
-  }
-  .banner h2 {
-    color: var(--gray-lightr-2);
-    font-size: 2.5rem;
-  }
-  .banner h3 {
-    font-size: 1rem;
-    color: var(--b-color);
-  }
+span {
+  color: var(--b-color);
 }
 
-/* .banner {
-  padding: 40px;
-  box-shadow: var(--box-shadow);
-} */
-
-.nav {
-  position: fixed;
-  top: 90%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: var(--box-shadow-);
-  width: 80%;
-  height: 6vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  text-align: center;
+.pro {
+  width: 100px;
+  border-radius: 50%;
   margin: 0 auto;
-  z-index: 1120;
-  background-color: rgba(209, 205, 205, 0.219);
+  margin-bottom: 1rem;
 }
 
-.nav i {
-  font-size: 1.2rem;
+/* 
+======================
+global grid
+======================
+*/
+@media screen and (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.line {
+  width: 20%;
+  background-color: var(--white-color);
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.sectiion-title h2 {
   text-align: center;
 }
 
@@ -191,84 +221,14 @@ about
 ======================
 */
 
-.section-title h1 {
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-}
-
-/* 
-======================
-skill
-======================
-*/
-
-.skill-sec {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  justify-content: center;
-  align-items: center;
-  place-items: center;
-  /* width: 100%; */
-  padding: 20px;
-}
-
-.skill-set {
-  /* padding: 10px; */
-  width: 80%;
-  padding: 15px;
-  box-shadow: var(--box-shadow-2);
-  margin: 0 auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background: var(--white-color);
-}
-.skill-img img {
-  margin: 0 auto;
-  color: white;
-
-  width: 40px;
-}
-.skill-set h4 {
-  color: black;
-  text-align: center;
-  font-size: 0.7rem;
-}
-
-/* 
-======================
-projects
-======================
-*/
-
-.projects-img {
-  text-align: center;
-  margin-bottom: 2rem;
-  box-shadow: var(--box-shadow);
-  font-size: 0.9rem;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.projects-img p {
-  line-height: 1;
-  margin-bottom: 1.4rem;
-}
-
-.projects img {
-  /* width: 200px; */
-  margin: 0 auto;
-  margin-top: -1rem;
+.about img {
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 700px) {
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    justify-content: space-between;
-    align-items: center;
-    place-items: center;
-    gap: 0 3rem;
-    /* width: 100%; */
+  .about img {
+    width: 70%;
+    margin-bottom: 0.5rem;
   }
 }
