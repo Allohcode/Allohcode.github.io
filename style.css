@@ -96,6 +96,7 @@ a {
   border-radius: 3px;
   /* background-color: red; */
   transition: var(--transition);
+  margin-bottom: 2rem;
 }
 .btn:hover {
   color: var(--black-gray);
@@ -123,7 +124,6 @@ header
 */
 header {
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
 }
 
 nav {
@@ -198,6 +198,7 @@ span {
   width: 150px;
   border-radius: 50%;
   margin: 0 auto;
+  margin-top: -2rem;
 }
 
 /* 
