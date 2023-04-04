@@ -68,7 +68,14 @@ global style
 .section {
   padding: 2rem 1rem;
   /* border-top: 1px solid #ddd; */
-  transition: transform 1s, opacity 1s;
+  transition: var(--transition);
+  opacity: 0;
+  transform: translate(100px);
+}
+
+.section-show {
+  transform: translateY(0);
+  opacity: 1;
 }
 .height {
   height: 100%;
@@ -116,12 +123,20 @@ header
 */
 header {
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
+
 nav {
   display: flex;
   flex-direction: flex;
   justify-content: space-between;
   align-items: center;
+}
+nav h1 {
+  font-size: 1rem;
+}
+nav i {
+  font-size: 2rem;
 }
 
 nav ul {
@@ -150,10 +165,13 @@ banner
 
 .banner {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  place-items: center;
+  place-content: center;
+  height: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -177,10 +195,9 @@ span {
 }
 
 .pro {
-  width: 100px;
+  width: 150px;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 1rem;
 }
 
 /* 
