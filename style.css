@@ -57,7 +57,7 @@ global style
   --white-color: #fff;
   --white-color2: rgb(240, 237, 237);
   --white-color3: rgb(239, 220, 220);
-  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(183, 238, 233, 0.096);
   --box-shadow-2: inset -0.1rem -0.1rem 13px #fff,
     inset 0.1rem -0.1rem 13px rgba(0, 0, 0, 0.1), inset 6px 6px 13px #fff,
     inset -6px -6px 13px rgba(0, 0, 0, 0.1);
@@ -235,6 +235,10 @@ global grid
   margin: 0 auto;
   margin-bottom: 1rem;
 }
+
+.sectiion-title {
+  margin-bottom: 2rem;
+}
 .sectiion-title h2 {
   text-align: center;
 }
@@ -302,8 +306,27 @@ global grid
 */
 
 .allprojects {
-  margin-top: 4rem;
-  /* background: var(--b-color); */
+  background: var(--black-gray2);
+  /* width: 90%; */
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: auto;
+  margin-bottom: 2rem;
+}
+
+.allprojects img {
+  width: 100%;
+  margin: 0 auto;
+}
+/* 
+.projects {
+} */
+.allprojects p {
+  font-size: 0.7rem;
+  line-height: 1;
+  margin-top: 10px;
 }
 
 .live {
@@ -311,5 +334,30 @@ global grid
   flex-direction: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
+  margin-bottom: -0.7rem;
   /* place-content: center; */
+}
+.live span i {
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (min-width: 700px) {
+  .projects-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 6rem;
+  }
 }
