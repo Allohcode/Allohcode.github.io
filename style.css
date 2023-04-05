@@ -69,8 +69,8 @@ global style
   padding: 2rem 1rem;
   /* border-top: 1px solid #ddd; */
   transition: var(--transition);
-  /* opacity: 0;
-  transform: translate(100px); */
+  opacity: 0;
+  transform: translate(100px);
   /* height: 75vh; */
 }
 
@@ -339,7 +339,7 @@ global grid
   margin-bottom: -0.7rem;
   /* place-content: center; */
 }
-.live span i {
+.icons {
   box-shadow: var(--box-shadow);
   padding: 25px;
   width: 20px;
@@ -365,5 +365,112 @@ global grid
     justify-content: space-between;
     align-items: center;
     gap: 0 6rem;
+  }
+}
+
+/* 
+======================
+footer
+======================
+*/
+
+.footer .footer-sec form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0 auto;
+  /* width: 90%; */
+  row-gap: 1rem;
+}
+
+.footer .footer-sec form input {
+  outline: none;
+  border: 3px dotted var(--b-color);
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.footer .footer-sec form textarea {
+  outline: none;
+  border: 3px dotted var(--b-color);
+  border-radius: 5px;
+  /* padding: 5x; */
+  height: 100px;
+}
+
+.footer .footer-sec button {
+  outline: transparent;
+  background: var(--b-color);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  width: 25%;
+  border: none;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.footer .footer-sec button:hover {
+  background: var(--black-gray);
+  color: white;
+  border: 1px solid var(--white-color);
+}
+.footer .footer-sec button span i {
+  color: var(--black-gray);
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.footer .footer-sec button span:hover i {
+  color: var(--b-color);
+}
+.contacts div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  /* align-items: center; */
+}
+.contacts span {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+}
+
+.contacts span i {
+  place-self: center;
+}
+
+.contacts span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .footer-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 12rem;
+  }
+
+  .footer .footer-sec button {
+    width: 40%;
   }
 }
