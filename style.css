@@ -341,7 +341,7 @@ global grid
 }
 .live span i {
   box-shadow: var(--box-shadow);
-  padding: 20px;
+  padding: 25px;
   width: 20px;
   height: 20px;
   display: flex;
@@ -351,6 +351,11 @@ global grid
   border-radius: 50%;
   font-size: 1.2rem;
   box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.live span i:hover {
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 700px) {
