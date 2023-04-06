@@ -69,8 +69,8 @@ global style
   padding: 2rem 1rem;
   /* border-top: 1px solid #ddd; */
   transition: var(--transition);
-  /* opacity: 0;
-  transform: translate(100px); */
+  opacity: 0;
+  transform: translate(100px);
   /* height: 75vh; */
 }
 .section-center {
