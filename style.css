@@ -69,9 +69,14 @@ global style
   padding: 2rem 1rem;
   /* border-top: 1px solid #ddd; */
   transition: var(--transition);
-  opacity: 0;
-  transform: translate(100px);
+  /* opacity: 0;
+  transform: translate(100px); */
   /* height: 75vh; */
+}
+.section-center {
+  /* width: 100%; */
+  margin: 0 auto;
+  max-width: 1120px;
 }
 
 .section-show {
@@ -110,11 +115,6 @@ li {
   border: 1px solid var(--b-color);
 }
 
-.section-center {
-  /* width: 100%; */
-  margin: 0 auto;
-  max-width: 1120px;
-}
 .section-box {
   box-shadow: var(--box-shadow);
   padding: 10px 0;
@@ -132,7 +132,6 @@ header {
   top: 0;
   right: 0;
   left: 0;
-
   z-index: 1120;
 }
 
