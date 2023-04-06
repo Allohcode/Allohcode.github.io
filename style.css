@@ -87,6 +87,9 @@ a {
   text-align: center;
   font-size: 0.8rem;
 }
+li {
+  list-style: none;
+}
 
 .btn {
   border: 1px solid var(--white-color);
@@ -126,13 +129,19 @@ header
 header {
   padding: 1rem 2rem;
   margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1120;
 }
 
 nav {
   display: flex;
   flex-direction: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 nav h1 {
   font-size: 1rem;
@@ -140,9 +149,48 @@ nav h1 {
 nav i {
   font-size: 2rem;
 }
+nav {
+  position: relative;
+}
 
-nav ul {
+.nav-links {
+  position: absolute;
+  top: 250%;
+  right: -40%;
+  transition: var(--transition);
+}
+.bars .cancel {
   display: none;
+}
+.bars .fa-times {
+  display: none;
+}
+.bars-rot {
+  animation-name: rot;
+  animation-duration: 1s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.show-nav {
+  transition: var(--transition);
+  right: -3%;
+}
+nav ul li {
+  margin-bottom: 5rem;
+}
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 700px) {
@@ -156,6 +204,19 @@ nav ul {
   }
   .bars {
     display: none;
+  }
+  nav ul li span {
+    display: none;
+  }
+  nav ul li a {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transition: var(--transition);
   }
 }
 /* 
@@ -315,12 +376,13 @@ global grid
   padding: 20px;
   padding: auto;
   margin-bottom: 2rem;
+  transition: var(--transition);
 }
 
-.allprojects img {
+/* .allprojects img {
   width: 100%;
   margin: 0 auto;
-}
+} */
 /* 
 .projects {
 } */
@@ -436,24 +498,14 @@ footer
   gap: 1rem;
   /* align-items: center; */
 }
-.contacts span {
+/* .contacts span i {
   display: flex;
   flex-direction: flex;
   justify-content: space-between;
-}
-
-.contacts span i {
-  place-self: center;
-}
-
-.contacts span {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-
-  gap: 1rem;
-}
+  place-content: center;
+  place-items: center;
+} */
 
 .socials {
   margin-top: 1rem;
