@@ -87,6 +87,7 @@ a {
   text-align: center;
   font-size: 0.8rem;
 }
+
 li {
   list-style: none;
 }
@@ -101,6 +102,7 @@ li {
   /* background-color: red; */
   transition: var(--transition);
   /* margin: 10rem 0; */
+  cursor: pointer;
 }
 .btn:hover {
   color: var(--black-gray);
@@ -108,9 +110,6 @@ li {
   border: 1px solid var(--b-color);
 }
 
-.btn-center {
-  /* margin: 0 auto; */
-}
 .section-center {
   /* width: 100%; */
   margin: 0 auto;
