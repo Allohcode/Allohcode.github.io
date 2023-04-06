@@ -2,10 +2,15 @@
 const banner = document.querySelector(".profile-info");
 const allPprojects = document.querySelectorAll(".allprojects");
 const sections = document.querySelectorAll(".section");
+const sectionsCenter = document.querySelectorAll(".section-center");
 const bars = document.querySelector(".bars");
 const nav = document.querySelector(".nav-links");
+const navAll = document.querySelectorAll(".nav-links li");
+// const about = document.querySelector(".about-sec");
+// const skill = document.querySelector(".skill-sec");
 let click = true;
 // click on nav
+console.log(navAll);
 
 //functions
 const observer = new IntersectionObserver((entries) => {
@@ -38,7 +43,7 @@ bars.addEventListener("click", () => {
   let bar = document.querySelector(".bars .fa-bars");
 
   nav.classList.toggle("show-nav");
-  bars.classList.add("bars-rot");
+  bars.classList.add("bar-x-rot");
 
   if (bars && click === true) {
     click = false;
@@ -52,3 +57,11 @@ bars.addEventListener("click", () => {
     cancle.classList.add("bar-x-rot");
   }
 });
+
+// scrollto
+// navAll.forEach((nav) => {
+//   nav.addEventListener("click", () => {
+//     about.scrollIntoView({ behavior: "smooth" });
+//     skill.scrollIntoView({ behavior: "smooth" });
+//   });
+// });
