@@ -224,9 +224,11 @@ banner
 ======================
 */
 
-/* .Banner-sec {
-  height: 100vh;
-} */
+.Banner-sec {
+  /* height: 100vh; */
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
 
 .banner-text {
   /* display: flex;
