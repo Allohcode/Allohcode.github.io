@@ -49,6 +49,6 @@ bars.addEventListener("click", () => {
     click = true;
     bar.style.display = "block";
     cancle.style.display = "none";
-    cancle.classList.add("bars-rot");
+    cancle.classList.add("bar-x-rot");
   }
 });

@@ -168,6 +168,10 @@ nav {
   animation-duration: 1s;
   /* animation-iteration-count: infinite; */
 }
+.bar-x-rot {
+  animation-name: x-rot;
+  animation-duration: 1s;
+}
 
 @keyframes rot {
   from {
@@ -175,6 +179,15 @@ nav {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@keyframes x-rot {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 
@@ -523,6 +536,9 @@ footer
   }
 
   .footer .footer-sec button {
-    width: 40%;
+    width: 20%;
+  }
+  .socials {
+    margin-top: -6rem;
   }
 }
