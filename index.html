@@ -328,19 +328,24 @@
         </div>
         <div class="section-center footer-sec">
           <div class="">
-            <form action="">
+            <form
+              id="submitform"
+              action="https://formspree.io/f/xoqzyawv"
+              method="POST"
+            >
               <label for="">Name</label>
-              <input type="text" placeholder="full name" />
+              <input type="text" name="Name" placeholder="full name" />
               <label for="">email</label>
-              <input type="email" placeholder="name@email.com" />
+              <input type="email" name="Emial" placeholder="name@email.com" />
               <label for="">Message</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="Message" id="" cols="30" rows="10"></textarea>
               <button type="submit">
                 send
                 <span
                   ><i class="fa fa-paper-plane" aria-hidden="true"></i
                 ></span>
               </button>
+              <div id="my-form-status"></div>
             </form>
           </div>
 
@@ -377,6 +382,7 @@
         </div>
       </footer>
     </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
